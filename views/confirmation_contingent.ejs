@@ -1,0 +1,40 @@
+<h1>Registration Page(team)</h1>
+    <form method="POST" action="/register-contingent">
+
+                <div id ="cName">
+                    <label for="cName">Team Leader Name :</label>
+                    <input type="text" name="cName" placeholder="Enter name...." required readonly value='<%= data.cName %>''>
+                </div>
+                <br>
+                <div id ="totalParticipants">
+                    <label for="totalParticipants">Total Participants :</label>
+                    <input type="number" name="totalParticipants" placeholder="Enter Number..." required readonly value=<%= data.totalParticipants %>>
+                </div>
+                <br>
+                <div id ="email">
+                    <label for="email">Email Address :</label>
+                    <input type="email" name="email" placeholder="Enter your email address...." required readonly value=<%= data.email %>>
+                </div>
+                <br>
+                <div id ="college">
+                    <label for="college">College :</label>
+                    <input type="text" name="college" placeholder="Enter your college name...." required readonly value='<%= data.college %>''>
+                </div>
+                <br>
+                <div id="stay">
+                    <label for="stay">Would u like to stay at DTU : </label>  
+                    <select name="stay" readonly>
+                        <option value=<%= data.stay %>><%= data.stay %></option>
+                    </select>
+                </div>
+                <div id="event">
+                    <label for="event">Event : </label>                   
+                    <select name="event" readonly>
+                        <option value=<%= data.event %>><%= data.event %></option>
+                    </select>
+                </div>
+                
+                
+                
+                <button type="submit">REGISTER</button>
+                <a href="javascript:history.back()">Go Back</a>
