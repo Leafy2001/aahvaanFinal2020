@@ -1,0 +1,18 @@
+<div>
+
+<h1>You are successfully registered</h1>Your Details are as follows:<br>
+        Team Leader Name: <%= team.cName %><br>
+        Total Participants: <%= team.teamMemberCount %><br>
+        Name of Team Members : <br>
+        <% for(teamMemName of team.teamMemberName){ %>
+            &nbsp;&nbsp;&nbsp;&nbsp;<%= teamMemName.name %>    <br>
+        <% } %>
+        College: <%= team.college %><br>
+        Stay at DTU: <%= team.stay %><br>
+        Email: <%= team.email %><br>
+        Event: <%= team.events %><br>
+        Your Unique Token: <%= team.tokenNumber %><br>
+        Keep this Safely for fututre payment use
+
+
+</div>
